@@ -1,0 +1,142 @@
+<html>
+<head>
+    <title>生成图片</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+
+    /*为了使菜单居中*/
+    body {
+        padding-top:100px;
+        text-align:center;
+    }
+
+
+    /* -------------菜单css代码----------begin---------- */
+    .menuDiv {
+        border: 2px black;
+        overflow: hidden;
+        display:inline-block;
+    }
+
+    /* 去掉a标签的下划线 */
+    .menuDiv a {
+        text-decoration: none;
+    }
+
+    /* 设置ul和li的样式 */
+    .menuDiv ul , .menuDiv li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+    /* 设置二级菜单绝对定位，并隐藏 */
+    .menuDiv > ul > li > ul {
+        position: absolute;
+        display: none;
+    }
+
+    /* 设置二级菜单的li的样式 */
+    .menuDiv > ul > li > ul > li {
+        float: none;
+    }
+
+    /* 鼠标放在一级菜单上，显示二级菜单 */
+    .menuDiv > ul > li:hover ul {
+        display: block;
+    }
+
+    /* 一级菜单 */
+    .menuDiv > ul > li > a {
+        width: 180px;
+        line-height: 40px;
+        color: black;
+        background-color: white;
+        text-align: center;
+        display: block;
+        border:1px solid black;
+    }
+
+    /* 在一级菜单中，鼠标放上去的样式 */
+    .menuDiv > ul > li > a:hover {
+        color: green;
+        background-color: white;
+    }
+
+    /* 二级菜单 */
+    .menuDiv > ul > li > ul > li > a {
+        width: 180px;
+        line-height: 36px;
+        color: black;
+        background-color: white;
+        text-align: center;
+        border: 1px solid black;
+        border-top: black;
+        display: block;
+    }
+
+    /* 在二级菜单中，第一个设置顶边框 */
+    .menuDiv > ul > li > ul > li:first-child > a {
+        border-top: 1px black;
+    }
+
+    /* 在二级菜单中，鼠标放上去的样式 */
+    .menuDiv > ul > li > ul > li > a:hover {
+        color: green;
+        background-color: white;
+    }
+    /* -------------菜单css代码----------end---------- */
+
+    </style>
+</head>
+<body>
+
+    <!-- -------菜单html代码---------begin------- -->
+    <div>
+<!--    <p class="sec-title">请求信息</p>-->
+        <form method="POST">
+            <div class="arg-item">
+                <p class="arg-name">产品名称</p>
+                <div class="input line el-textarea" >
+                    <textarea  name="title" autocomplete="off" rows="1" placeholder="汉字类型" class="el-textarea__inner" style="min-height: 31px; height: 31px;"></textarea><!---->
+                </div>
+            </div>
+            <div class="arg-item">
+                <p class="arg-name">产品副标题</p>
+                <div class="input line el-textarea">
+                    <textarea name="subTitle" autocomplete="off" rows="1" placeholder="汉字类型" class="el-textarea__inner" style="min-height: 31px; height: 31px;"></textarea><!---->
+                </div>
+            </div>
+            <div class="arg-item">
+                <p class="arg-name">一级类目ID</p>
+                <div class="input line el-textarea">
+                    <textarea name="categoryId" autocomplete="off" rows="1" placeholder="数字类型" class="el-textarea__inner" style="min-height: 31px; height: 31px;"></textarea><!---->
+                </div>
+            </div>
+            <div class="arg-item">
+                <p class="arg-name">二级类目名称</p>
+                <div class="input line el-textarea">
+                    <textarea name="secondCategoryName" autocomplete="off" rows="1" placeholder="汉字类型" class="el-textarea__inner" style="min-height: 31px; height: 31px;"></textarea><!---->
+                </div>
+            </div>
+            <div class="arg-item">
+                <p class="arg-name">袋型信息</p>
+                <div class="input line el-textarea">
+                    <textarea name="packagingType" autocomplete="off" rows="1" placeholder="数字类型" class="el-textarea__inner" style="min-height: 31px; height: 31px;"></textarea><!---->
+                </div>
+            </div>
+            <div class="arg-item">
+                <p class="arg-name">风格</p>
+                <div class="input line el-textarea">
+                    <textarea name="value" autocomplete="off" rows="1" placeholder="汉字类型" class="el-textarea__inner" style="min-height: 31px; height: 31px;"></textarea><!---->
+                </div>
+            </div>
+
+            <input type="submit" value="提交" style="min-height: 31px; height: 31px;"/>
+        </form>
+    </div>
+        <!-- -------菜单html代码---------end------- -->
+
+</body>
+</html>

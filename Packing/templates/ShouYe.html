@@ -1,0 +1,145 @@
+<html>
+<head>
+    <title>接口测试</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+
+    /*为了使菜单居中*/
+    body {
+        padding-top:100px;
+        text-align:center;
+    }
+
+
+    /* -------------菜单css代码----------begin---------- */
+    .menuDiv {
+        border: 2px black;
+        overflow: hidden;
+        display:inline-block;
+    }
+
+    /* 去掉a标签的下划线 */
+    .menuDiv a {
+        text-decoration: none;
+    }
+
+    /* 设置ul和li的样式 */
+    .menuDiv ul , .menuDiv li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+    /* 设置二级菜单绝对定位，并隐藏 */
+    .menuDiv > ul > li > ul {
+        position: absolute;
+        display: none;
+    }
+
+    /* 设置二级菜单的li的样式 */
+    .menuDiv > ul > li > ul > li {
+        float: none;
+    }
+
+    /* 鼠标放在一级菜单上，显示二级菜单 */
+    .menuDiv > ul > li:hover ul {
+        display: block;
+    }
+
+    /* 一级菜单 */
+    .menuDiv > ul > li > a {
+        width: 180px;
+        line-height: 40px;
+        color: black;
+        background-color: white;
+        text-align: center;
+        display: block;
+        border:1px solid black;
+    }
+
+    /* 在一级菜单中，鼠标放上去的样式 */
+    .menuDiv > ul > li > a:hover {
+        color: green;
+        background-color: white;
+    }
+
+    /* 二级菜单 */
+    .menuDiv > ul > li > ul > li > a {
+        width: 180px;
+        line-height: 36px;
+        color: black;
+        background-color: white;
+        text-align: center;
+        border: 1px solid black;
+        border-top: black;
+        display: block;
+    }
+
+    /* 在二级菜单中，第一个设置顶边框 */
+    .menuDiv > ul > li > ul > li:first-child > a {
+        border-top: 1px black;
+    }
+
+    /* 在二级菜单中，鼠标放上去的样式 */
+    .menuDiv > ul > li > ul > li > a:hover {
+        color: green;
+        background-color: white;
+    }
+    /* -------------菜单css代码----------end---------- */
+
+    </style>
+</head>
+<body>
+
+    <!-- -------菜单html代码---------begin------- -->
+    <div class="menuDiv">
+        <ul>
+            <li>
+                <a href="#">CRM管理端</a>
+                <ul>
+                    <li><a href="#">二级菜单啊啊啊啊啊</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">longbit-new</a>
+                <ul>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">longbit</a>
+                <ul>
+                    <li><a href="http://127.0.0.1:8080/index/">用户中心</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">longbit-contract</a>
+            </li>
+            <li>
+                <a href="#">活动</a>
+                <ul>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">longbit-exchange</a>
+            </li>
+            <li>
+                <a href="#">activityt</a>
+            </li>
+        </ul>
+    </div>
+    <!-- -------菜单html代码---------end------- -->
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>用户中心</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+        .menu {
+            width: 694px;
+            height: 50px;
+            /*设置元素水平居中*/
+            margin: 50px auto 0;
+            margin-bottom: 10px;
+            margin-inside: 10px;
+            margin-left: 10px;
+            margin-outside: 10px;
+            margin-top: 10px;
+            /*去除内联元素间隙*/
+            font-size: 0;
+            /*去掉ul自带的.格式*/
+            list-style: none;
+            padding: 0;
+        }
+        .menu li{
+            /*将元素转换为行内块元素*/
+            display:inline-block;
+            width:150px;
+            height:48px;
+            border:1px solid black;
+            font-size:16px;
+            /*将边框合并*/
+            margin-right:-1px;
+            text-align:center;
+            line-height:48px;
+        }
+        .menu a{
+            font-family: "Microsoft YaHei UI";
+            color:black;
+            /*去掉a元素的下划线*/
+            text-decoration: none;
+        }
+        /*鼠标位于元素位置时改变元素样式*/
+        .menu li:hover{
+            background-color: green;
+        }
+        .menu a:hover{
+            color:#fff;
+        }
+        </style>
+    </head>
+    <body>
+        <ul class="menu">
+            <li class = 'crm'>
+                登录/注册
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class = 'longbit-new'>
+                退出登录
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class = 'longbit'>
+                longbit
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class = 'longbit-contract'>
+                longbit-contract
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class = 'huodong'>
+                活动
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class = 'longbit-exchange'>
+                longbit-exchange
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class = 'activity'>
+                activity
+            </li>
+        </ul>
+    </body>
+</html>
